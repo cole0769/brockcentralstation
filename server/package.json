@@ -5,7 +5,10 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "build": "react-scripts build",
+    "build:staging": "env-cmd -f .env.staging npm run build"
+    
   },
   "keywords": [
     "nodejs",
@@ -24,6 +27,7 @@
     "fs-extra": "^10.0.0",
     "helmet": "^4.6.0",
     "mssql": "^7.2.1",
+    "react-scripts": "^4.0.3",
     "sequelize": "^6.6.5"
   },
   "devDependencies": {
